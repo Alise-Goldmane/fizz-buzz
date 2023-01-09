@@ -1,11 +1,37 @@
-body
-{
-    background-color: rgb(231, 248, 253);
-}
 h2
 {
     color: rgb(16, 26, 32);
+    text-align: center;
 }
+
+form
+{
+    text-align: center;
+}
+
+.button 
+{
+display: flex;
+}
+
+.formatting
+{
+justify-content: center;
+margin: 5px;
+}
+
+/*desktop resolution*/
+
+@media (min-width: 992px)
+{
+body
+{
+    background-color: rgb(231, 248, 253);
+    width: 1200px;
+    height: 100%;
+    margin:auto;
+}
+
 .grid-container
 {
     display: grid;
@@ -58,4 +84,157 @@ h2
 .onlyNumber
 {
     background-color: rgb(183, 219, 231);
+}
+}
+
+/*tablet resolution*/
+
+@media (min-width: 576px) and (max-width: 992px)
+{
+body
+{
+    background-color: rgb(231, 248, 253);
+    height: 100%;
+    margin:auto;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-areas:
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a";
+    justify-content: center;
+}
+    
+.cell
+{
+    display: grid;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(37, 48, 54);
+    justify-content: center;
+    align-content: center;
+}
+.cell:hover
+{
+    filter: brightness(150%);
+    box-shadow: 0 0 15px rgba(33, 33, 33, 0.3); 
+}
+.fizz
+{
+    background-color: rgb(93, 223, 216);
+}
+
+.buzz
+{
+    background-color: rgb(231, 191, 58);
+}
+
+.fizzBuzz
+{
+    background-color: rgb(187, 44, 75);
+}
+
+.onlyNumber
+{
+    background-color: rgb(183, 219, 231);
+}
+}
+
+/*smartphone resolution*/
+
+@media (max-width: 576px)
+{
+body
+{
+    background-color: rgb(231, 248, 253);
+    height: 100%;
+    margin:auto;
+}
+    .grid-container
+{
+    display: grid;
+    grid-template-areas:
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a"
+    "a a a a a";
+    justify-content: center;
+}
+
+.cell
+{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(37, 48, 54);
+    justify-content: center;
+    align-content: center;
+}
+.cell:hover
+{
+    filter: brightness(150%);
+    box-shadow: 0 0 15px rgba(33, 33, 33, 0.3); 
+}
+
+.fizz
+{
+    background-color: rgb(93, 223, 216);
+}
+
+.buzz
+{
+    background-color: rgb(231, 191, 58);
+}
+
+.fizzBuzz
+{
+    background-color: rgb(187, 44, 75);
+}
+
+.onlyNumber
+{
+    background-color: rgb(183, 219, 231);
+}
 }

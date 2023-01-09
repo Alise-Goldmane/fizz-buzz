@@ -6,12 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="script.js" defer></script>
-    <title>My homework</title>
+    <title>Fizz + Buzz</title>
 </head>
 <body>
-    <h2>Hello, world!</h2>
-    <button type="button" id="default-button">Click Me!</button>
-    <div class="grid-container" id="table"></div>
+    <h2>Welcome to the FizzBuzz generator!</h2>
+    <form>
+        <label for="fizz-value">Fizz value: </label>
+        <input type="number" id="fizz_value" name="fizz-value">
+        <label for="buzz-value">Buzz value: </label>
+        <input type="number" id="buzz_value" name="uzz-value">
+        <label for="start-value">Start value: </label>
+        <input type="number" id="start_value" name="start-value">
+        <label for="end-value">End value: </label>
+        <input type="number" id="end_value" name="end-value">
+      </form>
 
+    <hr>
+
+    <div class = "button formatting">
+    <button type="button" style="margin: 5px" id="default-button">Generate Default Fizz!</button>
+    <button type="button" style="margin: 5px" id="clearAll-button">Clear All!</button>
+    <button type="button" style="margin: 5px" id="custom-button">Generate Custom Buzz!</button></div>
+    <br><br>
+    <div class="grid-container" id="table"></div>
+    
 </body>
 </html>
